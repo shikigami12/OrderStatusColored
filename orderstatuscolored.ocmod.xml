@@ -1,0 +1,46 @@
+<modification>
+   <name><![CDATA[<font color="#0000"><b>Color Status For Order List</font>]]></name>
+   <code>Eugen Khudoliiv</code>
+    <version><![CDATA[<b>1.0</b>]]></version>
+    <author><![CDATA[<font color="green"><b>Eugen Khudoliiv</font>]]></author>
+    <link><![CDATA[http://deth.org.ua]]></link>                      
+<file path="admin/view/template/sale/order_list.tpl">
+		<operation>
+			<search position="replace"><![CDATA[
+			<td class="text-left"><?php echo $order['order_status']; ?></td>
+			]]></search>
+			<add><![CDATA[
+						<?php if ($order['order_status'] == 
+						"1" /*Name of new order (change number(only number. don't touch "") for your name of status(work for all languages))*/
+						) { ?>
+                        <td class="text-left" bgcolor="red"><font color="black"><b><?php echo $order['order_status']; ?></b></font></td>
+						<?php } elseif ($order['order_status'] == 
+						"2" /*Name of order in proccess (change number(only number. don't touch "") for your name of status(work for all languages))*/
+						) { ?>
+                        <td class="text-left" bgcolor="orange"><font color="black"><b><?php echo $order['order_status']; ?></b></font></td>
+						<?php } elseif ($order['order_status'] == 
+						"3" /*Name of order waiting payment (change number(only number. don't touch "") for your name of status(work for all languages))*/
+						) { ?>
+                        <td class="text-left" bgcolor="Aqua"><font color="black"><b><?php echo $order['order_status']; ?></b></font></td>
+						<?php } elseif ($order['order_status'] == 
+						"4" /*Name of order waiting for product (change number(only number. don't touch "") for your name of status(work for all languages))*/
+						) { ?>
+                       <td class="text-left" bgcolor="grey"><font color="black"><b><?php echo $order['order_status']; ?></b></font></td>
+						<?php } elseif ($order['order_status'] == 
+						"5" /*Name of order was paid (change number(only number. don't touch "") for your name of status(work for all languages))*/
+						) { ?>
+                        <td class="text-left" bgcolor="BlueViolet"><font color="black"><b><?php echo $order['order_status']; ?></b></font></td>
+						<?php } elseif ($order['order_status'] == 
+						"6" /*Name of order was canceled (change number(only number. don't touch "") for your name of status(work for all languages))*/
+						) { ?>
+                        <td class="text-left" bgcolor="black"><font color="white"><b><?php echo $order['order_status']; ?></b></font></td>
+						<?php } elseif ($order['order_status'] == 
+						"7" /*Name of order was shipped (change number(only number. don't touch "") for your name of status(work for all languages))*/
+						) { ?>
+                        <td class="text-left" bgcolor="green"><font color="black"><b><?php echo $order['order_status']; ?></b></font></td>
+					<?php } ?>
+			]]></add>
+		</operation>
+</file>
+</modification>					   
+					   
