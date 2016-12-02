@@ -18,6 +18,9 @@ replacing sample = ("New order" /*Name of new order (change number(only number. 
 5. Enjoy.
 
 
+If my work was helpful for you, buy me a coffee cup using this link:
+https://www.liqpay.com/ru/checkout/card/eugenkhudoliiv
+
 #Screenshot
 ![screenshot](sample.jpeg)
 
